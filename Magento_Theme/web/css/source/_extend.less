@@ -1,8 +1,3 @@
-
-// the following file let's you control letter-spacing with theme variables (optional)
-@import '_typography-extend.less';
-
-
 //
 //  Common
 //  _____________________________________________
@@ -12,6 +7,29 @@
     .messages {
         a {
             text-decoration: underline;
+        }
+    }
+
+    .page-footer {
+
+        .footer.content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .block.newsletter {
+                flex: 1 1 auto;
+                width: 100%;
+                max-width: 512px;
+            }
+        }
+    }
+
+    .c-social ul, .footer.content .c-social ul {
+        text-align: center;
+
+        > li {
+            margin: 0 1.2rem .5rem;
         }
     }
 }
